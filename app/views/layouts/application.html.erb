@@ -10,16 +10,16 @@
   </head>
   <!--navbar-->
   <div class= "container">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
-          <img alt="Brand" src="...">
+          <p>Brand</p>
         </a>
         </div>
-        <%= link_to 'Home', pages_home_path %>
-        <%= link_to 'About', pages_about_path %>
-        <%= link_to 'Product', products_path %>
+        <%= link_to 'Home', pages_home_path, class:"btn btn-default" %>
+        <%= link_to 'About', pages_about_path, class:"btn btn-default" %>
+        <%= link_to 'Product', products_path, class:"btn btn-default" %>
       </div>
     </nav>
   </div>
