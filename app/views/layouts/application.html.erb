@@ -8,8 +8,24 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+  <!--navbar-->
+  <div class= "container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+          <img alt="Brand" src="...">
+        </a>
+        </div>
+        <%= link_to 'Home', pages_home_path %>
+        <%= link_to 'About', pages_about_path %>
+        <%= link_to 'Product', products_path %>
+      </div>
+    </nav>
+  </div>
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
